@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,800&display=swap');
+html{
+    font-family: 'Poppins', Courier, monospace;
+    font-size: 1rem;
+   background-color: #e3e3e3;
+}
+.container{
+padding: 30px 0px;
+background: white;
+margin: 75px auto;
+padding: 10px 30px 30px 30px;
+border-radius: 15px 15px 75px 15px;
+max-width: 300px;
+}
+input{
+    height: 25px;
+    max-width: 50px;
+    display: block;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid rgb(181, 181, 181);
+    font-weight: 800;
+    color:black;
+    outline: none;
+    cursor: pointer;
+}
+label{
+    font-size: 0.8rem;
+    text-align: left;
+    display: block;
+    color:rgb(114, 114, 114);
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+img{
+   background-color: rgb(134, 46, 242);
+   padding:15px;
+   border-radius: 100%;
+   max-width: 30px;
+   height:auto;
+   position:relative;
+   bottom: 30px;
+   cursor: pointer;
+}
+.image{
+    text-align: center;
+    margin: 50px 0px 0px 0px;
+    border-top: 1px solid rgb(181, 181, 181);
+}
+.dateinput{
+display: flex;
+justify-content: center;
+}
+.wrapbox{
+    margin: 10px;
+}
+.datecal{
+    color: rgb(123, 20, 250);
+}
+.displays{
+    font-size: 2rem;
+    font-weight: 800;
+    font-style: italic;
+}
+h2{
+    margin: 0px;
+}
+#day_validation, #month_validation, #year_validation{
+    margin:0;
+    font-size: 0.45rem;
+    font-style: italic;
+    color:rgb(255, 57, 57);
+}
+input:focus {
+    border:rgb(123, 20, 250) solid 1px ;
+}
+img:hover{
+    background-color: black;
+}
+.error input{
+    border:rgb(255, 57, 57) solid 1px ;
+  }
+.error label{
+    color:rgb(255, 57, 57);
+}
+/* Desktop screen */
+@media screen and (min-width: 1440px){
+.container{
+    max-width: 600px;
+}
+input{
+    height: 40px;
+    max-width: 110px;
+    font-size: 1.8rem;
+}
+label{
+    font-size: 1.2rem;
+}
+#day_validation, #month_validation, #year_validation{
+    font-size: 0.7rem;
+}
+.dateinput{
+    justify-content: left;
+}
+img{
+    max-width: 70px;
+    height:auto;
+    position:relative;
+    bottom: 40px;
+ }
+ .image{
+    text-align: right;
+    margin: 30px 0px 0px 0px;
+    border-top: 1px solid rgb(181, 181, 181);
+}
+.displays{
+    margin-top:-50px;
+}
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Age calculator app</title>
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form action="#" id="inputform" class="dateinput">
+      <div class="wrapbox">
+        <label for="day">DAY</label>
+        <input type="text" name="day" id="day" maxlength="2" pattern="[1-31]+" placeholder="DD">
+        <p id="day_validation"></p>
+      </div>
+      <div class="wrapbox">
+        <label for="month">MONTH</label>
+        <input type="text" name="month" id="month" maxlength="2" pattern="[1-12]+" placeholder="MM">
+        <p id="month_validation"></p>
+      </div>
+      <div class="wrapbox">
+        <label for="year">YEAR</label>
+        <input type="text" name="year" id="year" maxlength="4" pattern="[1-31]+" placeholder="YYYY">
+        <p id="year_validation"></p>
+      </div>
+    </form>
+    <section class="image">
+      <img src="./assets/images/icon-arrow.svg" alt="for calculator" id="calculator">
+    </section>
+    <section class="displays">
+     <h2><span class="datecal" id="ageY">- -</span><span class="units"> years</span></h2>
+     <h2><span class="datecal" id="ageM">- -</span><span class="units"> months</span></h2>
+       <h2><span class="datecal"id="ageD">- -</span><span class="units"> days</span></h2>
+    </section>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Krisana Arunyamitanon</a>.
+  </div>
+</body>
+<script src="./index.js" defer></script>
+</html>
